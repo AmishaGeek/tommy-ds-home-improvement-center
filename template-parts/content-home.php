@@ -143,7 +143,9 @@
 <!-- End of Service -->
 
 <!-- Start of Request a quote -->
-<section class="kitchen-cabinet-sec">
-
+<section class="request-a-quote">
+    <div class="container">
+        
+    </div>
 </section>
 <!-- End of Request a quote -->
