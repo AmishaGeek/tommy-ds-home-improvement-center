@@ -3,7 +3,7 @@
 ?>
 
 <!-- Start of Banner -->
-<section class="main-banner bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/main-banner.jpg');">
+<section class="main-banner bg-img sec-1920" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/main-banner.jpg');">
     <div class="sec-wp">
         <div class="container">
             <div class="row">
@@ -24,7 +24,7 @@
 <!-- End of Banner -->
 
 <!-- Start of About Us -->
-<section class="about-us">
+<section class="about-us sec-1920">
     <div class="container">
         <div class="row">
             <div class="col-lg-6">
@@ -50,7 +50,7 @@
 
 <!-- Start of Service -->
 <div class="main-service-sec">
-    <div class="service-row even">
+    <div class="service-row even sec-1920">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-2 order-lg-1">
@@ -73,7 +73,7 @@
             </div>
         </div>
     </div>
-    <div class="service-row odd">
+    <div class="service-row odd sec-1920">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -95,7 +95,7 @@
             </div>
         </div>
     </div>
-    <div class="service-row even">
+    <div class="service-row even sec-1920">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6 order-2 order-lg-1">
@@ -117,7 +117,7 @@
             </div>
         </div>
     </div>
-    <div class="service-row odd">
+    <div class="service-row odd sec-1920">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-lg-6">
@@ -143,9 +143,189 @@
 <!-- End of Service -->
 
 <!-- Start of Request a quote -->
-<section class="request-a-quote">
-    <div class="container">
-        
+<section class="request-a-quote bg-img sec-1920" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/request-back-img.png');">
+    <div class="sec-wp">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="text-center sec-title">
+                        <h2 class="h2-title">Request a quote for kitchen cabinets</h2>
+                        <p>Follow these steps before visiting our showroom</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="request-content text-center">
+                        <span class="step">Step 1</span>
+                        <span class="icon">
+                            <img width="78" height="64" src="<?php echo home_url(); ?>/wp-content/uploads/2022/06/download-folder-icon.png" alt="Download Folder">
+                        </span>
+                        <h3>Download the <span>Magic Plan app</span></h3>
+                        <a href="javascript:void(0);" title="Download" class="link">Download <span></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="request-content text-center">
+                        <span class="step">Step 2</span>
+                        <span class="icon">
+                            <img width="70" height="83" src="<?php echo home_url(); ?>/wp-content/uploads/2022/06/icon-form.png" alt="Icon Form">
+                        </span>
+                        <h3>Submit a form, including <span>the photo from Magic Plan</span></h3>
+                        <a href="javascript:void(0);" title="Submit" class="link">Submit <span></span></a>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="request-content text-center">
+                        <span class="step">Step 3</span>
+                        <span class="icon">
+                            <img width="70" height="67" src="<?php echo home_url(); ?>/wp-content/uploads/2022/06/icon-map.png" alt="Icon Map">
+                        </span>
+                        <h3>Visit Tommy D’s <span>Showroom</span></h3>
+                        <a href="javascript:void(0);" title="Show On Map" class="link">Show On Map <span></span></a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
 </section>
 <!-- End of Request a quote -->
+
+<!-- Start of Main Div Section -->
+<div class="main-div-sec">
+    <section class="fianance-sec">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5">
+                    <div class="finance-content">
+                        <h2 class="h2-title">FINANCING</h2>
+                        <p>Financing through Hearth</p>
+                        <a href="javascript:void(0);" title="Apply Now" class="sec-btn">Apply Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="finance-text white-text">
+                        <p>
+                            Why wait when you can finance your porject now? We’ll help you compare pre-qualified rates in less than 2 minutes and offer helpful tips to match you to the right financing.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="gallery-sec">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="sec-title text-center">
+                        <h2 class="h2-title">Gallery</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="gallery-slider">
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-1.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-2.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-3.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-4.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-5.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-2.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-3.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-4.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-1.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-2.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-1.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="gallery-img-wp">
+                        <a href="javasccript:void(0);">
+                            <div class="gallery-img bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/gallery-img-2.jpg');"></div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="news-letter-sec">
+        <div class="container">
+            <div class="news-letter-box bg-img" style="background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2022/06/request-back-img.png');">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="news-content text-center">
+                            <h2 class="h2-title">Newsletter signup</h2>
+                            <p>
+                                Sign up to receive our newsletter.
+                            </p>
+                        </div>
+                        <?php #echo do_shortcode('[mc4wp_form id="46"]'); ?>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- End of Main Div Section -->

@@ -1170,6 +1170,12 @@ a:hover {
     background-repeat: no-repeat;
 }
 
+.sec-1920 {
+    width: 1920px;
+    left: 50%;
+    transform: translate(-50%, 0);
+}
+
 
 /*==========Common CSS End==========*/
 
@@ -1804,7 +1810,7 @@ button.close:hover {
     margin: -166px 0 0;
     -webkit-clip-path: polygon(100% 0, 100% 586px, 50% 100%, 0 586px, 0 0);
     clip-path: polygon(100% 0, 100% 586px, 50% 100%, 0 586px, 0 0);
-    z-index: 1;
+    z-index: 3;
 }
 
 .about-img-wp {
@@ -1817,6 +1823,7 @@ button.close:hover {
     background-size: 100% 100%;
 }
 
+.main-div-sec::before,
 .about-us::before {
     content: "";
     position: absolute;
@@ -1856,6 +1863,7 @@ button.close:hover {
 .main-service-sec {
     position: relative;
     margin: -170px 0 0;
+    z-index: 2;
 }
 
 .service-img-wp {
@@ -1979,6 +1987,7 @@ a.learn-more:hover .icon {
     z-index: 4;
 }
 
+.request-a-quote::after,
 .service-row.even::after {
     content: "";
     position: absolute;
@@ -2011,6 +2020,155 @@ a.learn-more:hover .icon {
 
 
 /*==========Service CSS End==========*/
+
+
+/*==========Request A Quote Start==========*/
+
+.request-a-quote {
+    position: relative;
+    background-color: #E5E5E8;
+    margin: -170px 0 0;
+    padding: 256px 0 159px;
+    -webkit-clip-path: polygon(100% 0, 100% 664px, 50% 100%, 0 664px, 0 0);
+    clip-path: polygon(100% 0, 100% 664px, 50% 100%, 0 664px, 0 0);
+    z-index: 1;
+}
+
+.request-a-quote::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #E5E5E8;
+    opacity: 0.8;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+.request-a-quote::after {
+    top: 120px;
+}
+
+.request-a-quote .h2-title {
+    margin-bottom: 5px;
+}
+
+.request-content .step {
+    display: block;
+    font-weight: bold;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    opacity: 0.6;
+    margin-bottom: 31px;
+}
+
+.request-content h3 {
+    font-size: 20px;
+    line-height: 30px;
+    color: var(--dark-color);
+    text-transform: uppercase;
+    margin-bottom: 23px;
+}
+
+.request-content h3 span {
+    display: block;
+}
+
+.request-content .icon {
+    display: block;
+    margin-bottom: 28px;
+    min-height: 83px;
+}
+
+.request-content .link {
+    color: #C4482C;
+    text-transform: uppercase;
+    font-weight: bold;
+    line-height: 24px;
+    transition: .3s;
+}
+
+.request-content .link span {
+    position: relative;
+    top: -1px;
+    display: inline-block;
+    border: 2px solid #C4482C;
+    border-left: 0;
+    border-bottom: 0;
+    width: 9px;
+    height: 9px;
+    transform: rotate(45deg);
+    transition: .3s;
+}
+
+.request-content .link:hover span {
+    margin-left: 6px;
+}
+
+.request-a-quote .sec-title {
+    margin-bottom: 38px;
+}
+
+
+/*==========Request A Quote End==========*/
+
+
+/*==========Main Div Section Start==========*/
+
+.main-div-sec {
+    position: relative;
+    background: var(--primary-color);
+    margin: -166px 0 0;
+    padding: 291px 0 150px;
+}
+
+.fianance-sec {
+    padding-bottom: 81px;
+}
+
+.finance-content .h2-title {
+    margin-bottom: 11px;
+}
+
+.finance-content p {
+    font-size: 20px;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--white-color);
+    font-weight: bold;
+    margin-bottom: 26px;
+}
+
+.finance-content {
+    padding: 0 0 0 98px;
+}
+
+.finance-text {
+    padding: 0 190px 0 100px;
+}
+
+.finance-content .sec-btn:hover {
+    border-color: var(--white-color);
+}
+
+.gallery-img {
+    width: 348px;
+    height: 276px;
+    margin: 0 2px -3px;
+}
+
+.gallery-slider .slick-list {
+    margin: 0 0 0 53px;
+    width: calc(100% + -114px);
+}
+
+.gallery-sec .h2-title {
+    margin-bottom: 57px;
+}
+
+
+/*==========Main Div Section End==========*/
 
 
 /*==========404 CSS==========*/

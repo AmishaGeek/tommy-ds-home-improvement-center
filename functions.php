@@ -50,6 +50,7 @@ function tommy_ds_home_improvement_center_setup() {
 	register_nav_menus(
 		array(
 			'menu-1' => esc_html__( 'Primary', 'tommy-ds-home-improvement-center' ),
+			'menu-2' => esc_html__( 'Secondary', 'tommy-ds-home-improvement-center' ),
 		)
 	);
 
