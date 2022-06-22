@@ -1858,20 +1858,6 @@ button.close:hover {
     margin: -170px 0 0;
 }
 
-.service-row.even::after {
-    content: "";
-    position: absolute;
-    top: 120px;
-    left: 50%;
-    transform: translate(-50%, 0);
-    width: 570px;
-    height: 70px;
-    background-image: url('assets/images/short-path.svg');
-    background-size: cover;
-    background-position: center;
-    z-index: 4;
-}
-
 .service-img-wp {
     position: relative;
     width: 100%;
@@ -1970,6 +1956,15 @@ a.learn-more:hover .icon {
     margin: 0;
 }
 
+.main-service-sec .service-row.even:last-child:before {
+    display: none;
+}
+
+.main-service-sec .service-row.even:last-child {
+    -webkit-clip-path: polygon(50% 0, 100% 155px, 100% 935px, 50% 100%, 0 935px, 0 155px);
+    clip-path: polygon(50% 0, 100% 155px, 100% 935px, 50% 100%, 0 935px, 0 155px);
+}
+
 .service-row.even::before {
     content: "";
     position: absolute;
@@ -1982,6 +1977,24 @@ a.learn-more:hover .icon {
     background-size: cover;
     background-position: center;
     z-index: 4;
+}
+
+.service-row.even::after {
+    content: "";
+    position: absolute;
+    top: 170px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 570px;
+    height: 70px;
+    background-image: url('assets/images/short-path.svg');
+    background-size: cover;
+    background-position: center;
+    z-index: 4;
+}
+
+.main-service-sec .service-row.even:first-child::after {
+    top: 120px;
 }
 
 .service-row.odd a.learn-more {
