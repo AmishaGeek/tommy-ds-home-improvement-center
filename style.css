@@ -1958,6 +1958,7 @@ a.learn-more:hover .icon {
 .service-row.even {
     position: relative;
     margin: -220px 0 0;
+    background: var(--white-color);
 }
 
 .main-service-sec .service-row.even:first-child {
@@ -1969,8 +1970,8 @@ a.learn-more:hover .icon {
 }
 
 .main-service-sec .service-row.even:last-child {
-    -webkit-clip-path: polygon(50% 0, 100% 155px, 100% 935px, 50% 100%, 0 935px, 0 155px);
-    clip-path: polygon(50% 0, 100% 155px, 100% 935px, 50% 100%, 0 935px, 0 155px);
+    -webkit-clip-path: polygon(100% 0, 100% 774px, 50% 100%, 0 774px, 0 0);
+    clip-path: polygon(100% 0, 100% 774px, 50% 100%, 0 774px, 0 0);
 }
 
 .service-row.even::before {
@@ -2022,7 +2023,7 @@ a.learn-more:hover .icon {
 /*==========Service CSS End==========*/
 
 
-/*==========Request A Quote Start==========*/
+/*==========Request A Quote CSS Start==========*/
 
 .request-a-quote {
     position: relative;
@@ -2111,16 +2112,16 @@ a.learn-more:hover .icon {
 }
 
 
-/*==========Request A Quote End==========*/
+/*==========Request A Quote CSS End==========*/
 
 
-/*==========Main Div Section Start==========*/
+/*==========Main Div Section CSS Start==========*/
 
 .main-div-sec {
     position: relative;
     background: var(--primary-color);
     margin: -166px 0 0;
-    padding: 291px 0 150px;
+    padding: 291px 0 0;
 }
 
 .fianance-sec {
@@ -2152,6 +2153,10 @@ a.learn-more:hover .icon {
     border-color: var(--white-color);
 }
 
+.gallery-sec {
+    padding-bottom: 114px;
+}
+
 .gallery-img {
     width: 348px;
     height: 276px;
@@ -2167,8 +2172,191 @@ a.learn-more:hover .icon {
     margin-bottom: 57px;
 }
 
+.news-letter-box {
+    width: 1170px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    position: relative;
+    background-color: var(--secondary-color);
+    -webkit-clip-path: polygon(50% 0, 100% 55px, 100% 100%, 50% 100%, 0 935px, 0 55px);
+    clip-path: polygon(50% 0, 100% 55px, 100% 100%, 50% 100%, 0 935px, 0 55px);
+    padding: 88px 0 86px;
+    background-size: auto;
+}
 
-/*==========Main Div Section End==========*/
+.news-letter-box::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--secondary-color);
+    top: 0;
+    left: 0;
+    opacity: 0.9;
+}
+
+.news-content {
+    position: relative;
+    z-index: 4;
+}
+
+.news-content p {
+    color: var(--dark-color);
+    margin-bottom: 36px;
+}
+
+.news-content .h2-title {
+    color: var(--dark-color);
+    margin-bottom: 4px;
+}
+
+.news-form {
+    max-width: 470px;
+    margin: auto;
+    position: relative;
+}
+
+.news-form .email-input {
+    width: 100%;
+    height: 46px;
+    color: #A0AAC3;
+    padding: 0 160px 0 20px;
+    outline: none;
+    border: 2px solid transparent;
+}
+
+.news-form .email-input::placeholder {
+    color: #A0AAC3;
+}
+
+.news-form .sec-btn {
+    width: 158px;
+    height: 42px;
+    background: #C4482C;
+    border-color: #C4482C;
+    color: var(--white-color);
+    position: absolute;
+    top: 50%;
+    right: 2px;
+    transform: translate(0, -50%);
+}
+
+.news-form .sec-btn:hover {
+    background: var(--secondary-color);
+    border-color: var(--secondary-color);
+}
+
+.news-letter-sec {
+    position: relative;
+    z-index: 1;
+    top: 10px;
+}
+
+
+/*==========Main Div Section CSS End==========*/
+
+
+/*==========Instagram CSS Start==========*/
+
+.instagram-sec {
+    position: relative;
+    padding: 73px 0 40px;
+}
+
+.instagram-sec .h2-title {
+    color: var(--dark-color);
+    margin-bottom: 33px;
+}
+
+.instagram-content #sb_instagram .sbi_photo {
+    height: 260px !important;
+}
+
+.instagram-content .slick-slide {
+    margin: 0 10px;
+}
+
+.instagram-content .slick-list {
+    position: relative;
+    padding-right: 185px;
+    left: 40px;
+}
+
+
+/*==========Instagram CSS End==========*/
+
+
+/*==========Footer CSS Start==========*/
+
+.top-footer {
+    position: relative;
+    padding: 100px 0 100px;
+}
+
+.top-footer::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 183px;
+    background: var(--primary-color);
+    top: 0;
+    left: 0;
+    -webkit-clip-path: polygon(50% 0, 100% 155px, 100% 935px, 50% 100%, 0 935px, 0 155px);
+    clip-path: polygon(50% 0, 100% 155px, 100% 935px, 50% 100%, 0 935px, 0 155px);
+    ;
+}
+
+.main-contact-wp {
+    background: var(--primary-color);
+}
+
+.contact-link li {
+    display: inline-block;
+}
+
+.contact-link-box {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 28px;
+}
+
+.contact-link-box .icon {
+    min-width: 44px;
+    min-height: 46px;
+    background: #C4482C;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.contact-link-box .text span.title {
+    display: block;
+    color: var(--white-color);
+    font-size: 13px;
+    opacity: 0.7;
+    margin-bottom: -2px;
+}
+
+.contact-link-box .text a {
+    color: var(--white-color);
+    transition: .3s;
+}
+
+.contact-link-box .text a span {
+    display: block;
+}
+
+.contact-link-box .text a:hover {
+    color: var(--secondary-color);
+}
+
+.footer-map iframe {
+    filter: invert(1) grayscale(1);
+}
+
+
+/*==========Footer CSS End==========*/
 
 
 /*==========404 CSS==========*/

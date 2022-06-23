@@ -320,8 +320,10 @@
                             <p>
                                 Sign up to receive our newsletter.
                             </p>
+                            <div class="news-form">
+                                <?php echo do_shortcode('[mc4wp_form id="46"]'); ?>
+                            </div>
                         </div>
-                        <?php #echo do_shortcode('[mc4wp_form id="46"]'); ?>
                     </div>
                 </div>
             </div>
@@ -329,3 +331,24 @@
     </section>
 </div>
 <!-- End of Main Div Section -->
+
+<!-- Start of Intagram -->
+<section class="instagram-sec">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="sec-title text-center">
+                    <h2 class="h2-title">Instagram feed</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="instagram-content">
+                    <?php echo do_shortcode('[instagram-feed feed=1]'); ?>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- End of Intagram -->
