@@ -63,6 +63,14 @@ jQuery(document).ready(function($) {
         prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
         nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
         responsive: [{
+                breakpoint: 1500,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 1,
+                    infinite: true,
+                }
+            },
+            {
                 breakpoint: 992,
                 settings: {
                     slidesToShow: 2,
@@ -153,16 +161,25 @@ jQuery(document).ready(function($) {
             prevArrow: '<button class="slide-arrow prev-arrow"><i class="fa fa-angle-left" aria-hidden="true"></i></button>',
             nextArrow: '<button class="slide-arrow next-arrow"><i class="fa fa-angle-right" aria-hidden="true"></i></button>',
             responsive: [{
-                breakpoint: 992,
-                settings: {
-                    slidesToShow: 2,
-                    slidesToScroll: 1,
-                    infinite: true,
-                    dots: false,
-                    arrows: false,
-                    rows: 1,
+                    breakpoint: 1500,
+                    settings: {
+                        slidesToShow: 4,
+                        slidesToScroll: 1,
+                        infinite: true,
+                    }
+                },
+                {
+                    breakpoint: 992,
+                    settings: {
+                        slidesToShow: 2,
+                        slidesToScroll: 1,
+                        infinite: true,
+                        dots: false,
+                        arrows: false,
+                        rows: 1,
+                    }
                 }
-            }]
+            ]
         });
     }, 1000);
 

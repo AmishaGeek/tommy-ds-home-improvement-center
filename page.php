@@ -15,24 +15,44 @@
 get_header();
 ?>
 
-	<main id="primary" class="site-main">
+<main id="primary" class="site-main">
 
-		<?php
-		while ( have_posts() ) :
-			the_post();
+	<section class="main-banner inner-banner">
+		<div class="container">
+			<div class="sec-wp">
+				<div class="row">
+					<div class="col-lg-12">
+						<div class="inner-banner-content white-text text-center">
+							<h1 class="h1-title wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s"><?php the_title(); ?></h1>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
 
-			get_template_part( 'template-parts/content', 'page' );
+	<div class="sample-page-content">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<?php
+					while ( have_posts() ) :
+						the_post();
 
-			// If comments are open or we have at least one comment, load up the comment template.
-			if ( comments_open() || get_comments_number() ) :
-				comments_template();
-			endif;
+						get_template_part( 'template-parts/content', 'page' );
 
-		endwhile; // End of the loop.
-		?>
+						// If comments are open or we have at least one comment, load up the comment template.
+						if ( comments_open() || get_comments_number() ) :
+							comments_template();
+						endif;
 
-	</main><!-- #main -->
+					endwhile; // End of the loop.
+					?>
+				</div>
+			</div>
+		</div>
+	</div>
+</main><!-- #main -->
 
 <?php
-get_sidebar();
-get_footer();
+	get_footer();

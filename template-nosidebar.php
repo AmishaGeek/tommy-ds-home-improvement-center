@@ -4,12 +4,12 @@
  */
   get_header();
 ?>
-<section class="main-banner inner-banner" style=" background-image: url('<?php echo home_url(); ?>/wp-content/uploads/2020/05/InteriorHeaderImage.jpg');">
+<section class="inner-banner sec-1920">
     <div class="container">
         <div class="row">
-            <div class="col-lg-9">
-                <div class="banner-text">
-                    <h1 class="h1-title"><?php the_title(); ?></h1>
+            <div class="col-lg-12">
+                <div class="inner-banner-content white-text text-center wow fadeup-animation">
+                    <h1 class="h1-title wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.1s"><?php the_title(); ?></h1>
                 </div>
             </div>
         </div>
