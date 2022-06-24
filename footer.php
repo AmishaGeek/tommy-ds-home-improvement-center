@@ -56,7 +56,7 @@
 										</div>
 										<div class="text">
 											<span class="title">Address</span>
-											<a href="<?php the_field('address_link','option'); ?>" target="_blank" title="<?php the_field('address','option'); ?>"><?php the_field('address','option'); ?></a>
+											<a href="<?php the_field('address_link','option'); ?>" target="_blank" title="<?php echo strip_tags(get_field('address','option')); ?>"><?php the_field('address','option'); ?></a>
 										</div>
 									</div>
 								</div>

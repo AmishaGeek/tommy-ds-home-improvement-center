@@ -28,7 +28,6 @@
 <body <?php body_class(); ?>>
 	<?php wp_body_open(); ?>
 	<div id="page" class="site">
-		<a class="skip-link screen-reader-text" href="#primary"><?php esc_html_e('Skip to content', 'tommy-ds-home-improvement-center'); ?></a>
 
 		<header id="masthead" class="site-header">
 			<div class="container">
@@ -45,7 +44,7 @@
 						</div>
 						<div class="col-lg-10">
 							<nav id="site-navigation" class="main-navigation">
-								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e('Primary Menu', 'tommy-ds-home-improvement-center'); ?>
+								<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
 									<span></span>
 									<span></span>
 									<span></span>
