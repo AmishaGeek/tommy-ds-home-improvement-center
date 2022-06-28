@@ -35,11 +35,7 @@
 					<div class="row">
 						<div class="col-lg-2">
 							<div class="site-branding">
-								<?php
-								the_custom_logo();
-								
-								?>
-								
+								<?php the_custom_logo(); ?>
 							</div><!-- .site-branding -->
 						</div>
 						<div class="col-lg-10">

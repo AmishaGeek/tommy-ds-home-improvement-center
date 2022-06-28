@@ -784,6 +784,11 @@ div.wpcf7-mail-sent-ok {
     display: none !important;
 }
 
+.wpcf7 form.sent .wpcf7-response-output {
+    color: #46b450;
+    border-color: #46b450 !important;
+}
+
 .wpcf7 form .wpcf7-response-output {
     margin: -40px 0 50px;
     color: var(--red-color);
@@ -888,7 +893,6 @@ select {
 .submit-btn {
     text-align: right;
     position: relative;
-    right: -39px;
     bottom: 72px;
     pointer-events: none;
     display: flex;
@@ -898,6 +902,8 @@ select {
 
 .wpcf7-spinner {
     margin: 0 0 0 15px;
+    position: absolute;
+    right: -20px;
 }
 
 .submit-btn .sec-btn {
@@ -1094,7 +1100,7 @@ input[type=number]::-webkit-outer-spin-button {
     background: var(--secondary-color);
     color: var(--white-color);
     display: inline-block;
-    padding: 12px 30px;
+    padding: 10px 25px;
     transition: .3s;
 }
 
@@ -1380,6 +1386,7 @@ button.close:hover {
     text-transform: uppercase;
     font-weight: bold;
     text-align: center;
+    padding-top: 2px;
     cursor: pointer;
     outline: none !important;
     transition: .3s;
@@ -1784,6 +1791,9 @@ button.close:hover {
     position: absolute;
     top: 0;
     left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     z-index: 1;
 }
 
@@ -1920,8 +1930,8 @@ button.close:hover {
     position: relative;
     background: var(--primary-color);
     margin: -166px 0 0;
-    -webkit-clip-path: polygon(100% 0, 100% 586px, 50% 100%, 0 586px, 0 0);
-    clip-path: polygon(100% 0, 100% 586px, 50% 100%, 0 586px, 0 0);
+    /* -webkit-clip-path: polygon(100% 0, 100% 586px, 50% 100%, 0 586px, 0 0);
+    clip-path: polygon(100% 0, 100% 586px, 50% 100%, 0 586px, 0 0); */
     z-index: 3;
 }
 
@@ -1976,8 +1986,10 @@ button.close:hover {
 
 .main-service-sec {
     position: relative;
-    margin: -170px 0 0;
-    z-index: 2;
+    margin: -172px 0 0;
+    -webkit-clip-path: polygon(50% 172px, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 172px, 100% 0, 100% 100%, 0 100%, 0 0);
+    z-index: 3;
 }
 
 .service-img-wp {
@@ -2008,10 +2020,10 @@ button.close:hover {
 
 .service-content {
     position: relative;
-    padding-right: 160px;
+    padding: 62px 160px 0 0;
 }
 
-.service-content .sub-title {
+.service-row .sub-title {
     position: absolute;
     font-size: 100px;
     font-weight: 900;
@@ -2019,7 +2031,7 @@ button.close:hover {
     color: var(--dark-color);
     text-transform: uppercase;
     opacity: 0.1;
-    top: -116px;
+    top: -85px;
     left: -305px;
 }
 
@@ -2084,8 +2096,8 @@ a.learn-more:hover .icon {
 }
 
 .main-service-sec .service-row.even:last-child {
-    -webkit-clip-path: polygon(100% 0, 100% 774px, 50% 100%, 0 774px, 0 0);
-    clip-path: polygon(100% 0, 100% 774px, 50% 100%, 0 774px, 0 0);
+    -webkit-clip-path: polygon(100% 0, 100% 755px, 50% 100%, 0 755px, 0 0);
+    clip-path: polygon(100% 0, 100% 755px, 50% 100%, 0 755px, 0 0);
 }
 
 .top-footer::after,
@@ -2145,8 +2157,6 @@ a.learn-more:hover .icon {
     background-color: #E5E5E8;
     margin: -170px 0 0;
     padding: 256px 0 159px;
-    -webkit-clip-path: polygon(100% 0, 100% 664px, 50% 100%, 0 664px, 0 0);
-    clip-path: polygon(100% 0, 100% 664px, 50% 100%, 0 664px, 0 0);
     z-index: 1;
 }
 
@@ -2175,6 +2185,7 @@ a.learn-more:hover .icon {
     font-weight: bold;
     color: var(--dark-color);
     text-transform: uppercase;
+    font-size: 14px;
     opacity: 0.6;
     margin-bottom: 31px;
 }
@@ -2223,7 +2234,7 @@ a.learn-more:hover .icon {
 }
 
 .request-a-quote .sec-title {
-    margin-bottom: 38px;
+    margin-bottom: 36px;
 }
 
 
@@ -2235,12 +2246,16 @@ a.learn-more:hover .icon {
 .main-div-sec {
     position: relative;
     background: var(--primary-color);
-    margin: -166px 0 0;
-    padding: 291px 0 0;
+    margin: -185px 0 0;
 }
 
 .fianance-sec {
-    padding-bottom: 81px;
+    background: var(--primary-color);
+    padding: 291px 0 81px;
+    -webkit-clip-path: polygon(50% 167px, 100% 0, 100% 100%, 0 100%, 0 0);
+    clip-path: polygon(50% 167px, 100% 0, 100% 100%, 0 100%, 0 0);
+    z-index: 3;
+    position: relative;
 }
 
 .finance-content .h2-title {
@@ -2313,6 +2328,7 @@ a.learn-more:hover .icon {
 .news-content {
     position: relative;
     z-index: 4;
+    padding: 0 30px;
 }
 
 .news-content p {
@@ -2374,7 +2390,7 @@ a.learn-more:hover .icon {
 
 .instagram-sec {
     position: relative;
-    padding: 73px 0 40px;
+    padding: 73px 0 56px;
 }
 
 .instagram-sec .h2-title {
@@ -2415,8 +2431,8 @@ a.learn-more:hover .icon {
     background: var(--primary-color);
     top: 0;
     left: 0;
-    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 140px, 0 100%);
-    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 140px, 0 100%);
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 120px, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 120px, 0 100%);
 }
 
 .top-footer::after {
@@ -2429,6 +2445,9 @@ a.learn-more:hover .icon {
     background: var(--primary-color);
     -webkit-clip-path: polygon(50% 0, 100% 95px, 100% 100%, 50% 100%, 0 100%, 0 95px);
     clip-path: polygon(50% 0, 100% 95px, 100% 100%, 50% 100%, 0 100%, 0 95px);
+    width: 1170px;
+    left: 50%;
+    transform: translate(-50%, 0);
     z-index: 6;
     padding: 0 0 75px;
 }
@@ -2500,7 +2519,7 @@ a.learn-more:hover .icon {
 
 .contact-form {
     position: relative;
-    padding: 80px 70px 0 27px;
+    padding: 103px 70px 0 27px;
 }
 
 .contact-form .h2-title {
@@ -2533,9 +2552,10 @@ a.learn-more:hover .icon {
     padding: 56px 0 27px;
     padding-bottom: 27px;
     border-bottom: 8px solid var(--primary-color);
-    -webkit-clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
-    clip-path: polygon(50% 0, 100% 20%, 100% 100%, 0 100%, 0 20%);
+    -webkit-clip-path: polygon(50% 0, 100% 120px, 100% 100%, 0 100%, 0 120px);
+    clip-path: polygon(50% 0, 100% 120px, 100% 100%, 0 100%, 0 120px);
     background: var(--white-color);
+    z-index: 6;
 }
 
 .footer-logo {
@@ -2754,6 +2774,7 @@ a.learn-more:hover .icon {
     overflow: visible;
     text-overflow: unset;
     -webkit-line-clamp: unset;
+    margin-bottom: 28px;
 }
 
 .main-services .service-img-wp {
@@ -3563,6 +3584,9 @@ a.prev.page-numbers {
     }
     .site-branding {
         width: 140px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
     .h1-title {
         font-size: 90px;
@@ -3618,7 +3642,6 @@ a.prev.page-numbers {
     }
     .about-us {
         margin: -230px 0 0;
-        clip-path: polygon(100% 0, 100% 73%, 50% 100%, 0 73%, 0 0);
     }
     .contact-page-sec::before,
     .resource-sec::before,
@@ -3635,6 +3658,8 @@ a.prev.page-numbers {
     }
     .main-service-sec {
         margin: -200px 0 0;
+        -webkit-clip-path: polygon(50% 200px, 100% 0, 100% 100%, 0 100%, 0 0);
+        clip-path: polygon(50% 200px, 100% 0, 100% 100%, 0 100%, 0 0);
     }
     .main-service-sec .service-row.even:first-child::after {
         top: 150px;
@@ -3650,24 +3675,21 @@ a.prev.page-numbers {
         margin: -206px 0 0;
     }
     .main-div-sec::before {
-        top: 90px;
+        top: 105px;
     }
     .request-a-quote {
-        clip-path: polygon(100% 0, 100% 74%, 50% 100%, 0 74%, 0 0);
-        margin: -212px 0 0;
+        margin: -218px 0 0;
+        padding: 300px 0 159px;
     }
     .request-a-quote::after {
-        top: 163px;
+        top: 168px;
     }
     .main-div-sec {
-        margin: -212px 0 0;
-    }
-    .main-contact-wp {
-        clip-path: polygon(50% 0, 100% 15%, 100% 100%, 50% 100%, 0 100%, 0 15%);
+        margin: -230px 0 0;
     }
     .footer-map {
-        max-width: 685px;
-        width: 685px;
+        max-width: 585px;
+        width: 585px;
     }
     .footer-map iframe {
         width: 100%;
@@ -3701,10 +3723,25 @@ a.prev.page-numbers {
     .contact-page-sec::before {
         top: -123px;
     }
+    .top-footer::before {
+        clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 140px, 0 100%);
+    }
+    .fianance-sec {
+        clip-path: polygon(50% 229px, 100% 6px, 100% 100%, 0 100%, 0 6px);
+    }
+    .main-service-sec .service-row.even:last-child {
+        clip-path: polygon(100% 0, 100% 698px, 50% 100%, 0 698px, 0 0);
+    }
+    .bottom-footer {
+        clip-path: polygon(50% 0, 100% 118px, 100% 100%, 0 100%, 0 118px);
+    }
+    .service-content p {
+        height: 123px;
+    }
 }
 
 @media(max-width: 1799px) {
-    .service-content .sub-title {
+    .service-row .sub-title {
         font-size: 80px;
         left: -110px;
     }
@@ -3730,6 +3767,13 @@ a.prev.page-numbers {
     }
 }
 
+@media only screen and (min-width: 1921px) and (max-height: 620px) {
+    .main-banner {
+        -webkit-clip-path: polygon(100% 0, 100% 623px, 50% 100%, 0 623px, 0 0);
+        clip-path: polygon(100% 0, 100% 623px, 50% 100%, 0 623px, 0 0);
+    }
+}
+
 @media(max-width: 1499px) {
     .site-header .container {
         max-width: 1140px;
@@ -3745,14 +3789,10 @@ a.prev.page-numbers {
     .about-img-wp {
         width: 555px;
     }
-    .about-us {
-        -webkit-clip-path: polygon(100% 0, 100% 585px, 50% 100%, 0 585px, 0 0);
-        clip-path: polygon(100% 0, 100% 585px, 50% 100%, 0 585px, 0 0);
-    }
     .about-content {
         padding: 243px 0 176px 30px;
     }
-    .service-content .sub-title {
+    .service-row .sub-title {
         font-size: 60px;
         left: -30px;
     }
@@ -3760,14 +3800,15 @@ a.prev.page-numbers {
         height: 921px;
     }
     .service-row.odd {
-        clip-path: polygon(50% 0, 100% 23%, 100% 755px, 50% 100%, 0 755px, 0 23%);
+        clip-path: polygon(50% 0, 100% 157px, 100% 755px, 50% 100%, 0 755px, 0 157px);
     }
     .gallery-slider .slick-list {
         margin: 0 0 0 30px;
         width: calc(100% + -60px);
     }
-    .top-footer {
-        padding: 35px 0 0;
+    .main-contact-wp {
+        width: auto;
+        clip-path: polygon(50% 0, 100% 90px, 100% 100%, 50% 100%, 0 100%, 0 90px);
     }
     .footer-map {
         width: 555px;
@@ -3811,7 +3852,7 @@ a.prev.page-numbers {
     .about-content {
         padding: 243px 0 176px 10px;
     }
-    .service-content .sub-title {
+    .service-row .sub-title {
         font-size: 50px;
         left: 10px;
     }
@@ -3839,7 +3880,7 @@ a.prev.page-numbers {
         width: 960px;
     }
     .main-contact-wp {
-        clip-path: polygon(50% 0, 100% 81px, 100% 100%, 50% 100%, 0 100%, 0 81px);
+        clip-path: polygon(50% 0, 100% 76px, 100% 100%, 50% 100%, 0 100%, 0 76px);
     }
     .footer-map {
         width: 465px;
@@ -3854,10 +3895,7 @@ a.prev.page-numbers {
         margin-right: 10px;
     }
     .wpcf7-spinner {
-        margin: 0 0 0 5px;
-    }
-    .submit-btn {
-        right: -29px;
+        right: -10px;
     }
     .footer-text p {
         padding: 0 0 37px;
@@ -4056,9 +4094,6 @@ a.prev.page-numbers {
         height: 400px;
         margin: 256px 0 0;
     }
-    .about-us {
-        clip-path: none;
-    }
     .request-a-quote::after,
     .service-row.even::after {
         display: none;
@@ -4070,6 +4105,7 @@ a.prev.page-numbers {
     }
     .main-service-sec {
         margin: 0;
+        clip-path: none;
     }
     .service-img {
         width: 100%;
@@ -4086,6 +4122,7 @@ a.prev.page-numbers {
     .about-us::before {
         bottom: -180px;
         width: 1000px;
+        pointer-events: none;
     }
     .service-content p {
         height: auto;
@@ -4094,11 +4131,22 @@ a.prev.page-numbers {
         text-overflow: unset;
         margin-bottom: 18px;
     }
-    .service-content .sub-title {
-        top: -33px;
-        left: auto;
-        right: 15px;
-        font-size: 40px;
+    .main-services .service-content p {
+        margin-bottom: 16px;
+    }
+    .service-row .sub-title {
+        position: relative;
+        top: 0;
+        left: 0;
+        text-align: center;
+        display: block;
+        margin-bottom: 28px;
+        transition: .3s;
+    }
+    .service-row>.for-mob {
+        max-width: 720px;
+        margin: auto;
+        padding: 0 15px;
     }
     .h3-title {
         margin-bottom: 0;
@@ -4106,6 +4154,9 @@ a.prev.page-numbers {
     .service-row.odd .service-img-wp {
         height: 400px;
         left: 0;
+    }
+    .main-service-sec .service-row.even:first-child {
+        padding: 54px 0 0;
     }
     .service-row.even {
         margin: 0 0 0;
@@ -4118,7 +4169,6 @@ a.prev.page-numbers {
         margin-bottom: 0;
     }
     .request-a-quote {
-        clip-path: polygon(100% 0, 100% 90%, 50% 100%, 0 90%, 0 0);
         padding: 225px 0 90px;
     }
     .request-a-quote .sec-title {
@@ -4137,11 +4187,8 @@ a.prev.page-numbers {
     .request-content {
         margin-bottom: 17px;
     }
-    .main-div-sec {
-        padding: 241px 0 0;
-    }
     .fianance-sec {
-        padding-bottom: 50px;
+        padding: 241px 0 50px;
     }
     .finance-content .h2-title {
         margin-bottom: 2px;
@@ -4212,7 +4259,7 @@ a.prev.page-numbers {
         text-align: center;
     }
     .top-footer {
-        clip-path: none;
+        padding: 40px 0 70px;
     }
     .top-footer::before {
         clip-path: polygon(0 0, 100% 0, 100% 50%, 100% 100%, 50% 30%, 0 100%);
@@ -4233,6 +4280,7 @@ a.prev.page-numbers {
         margin: 0 0 0;
         padding: 70px 0 65px;
         border: 0;
+        clip-path: none;
     }
     .copyright p,
     .copyright ul {
@@ -4270,6 +4318,7 @@ a.prev.page-numbers {
     }
     .main-request-form {
         padding: 132px 0 0;
+        background-position: bottom;
     }
     .main-request-form-sec .gallery-slider .slick-list {
         margin: 0;
@@ -4280,7 +4329,7 @@ a.prev.page-numbers {
         margin: 0 0 -30px;
     }
     .inner-banner {
-        padding: 160px 0 85px;
+        padding: 160px 0 65px;
         clip-path: polygon(100% 0, 100% 230px, 50% 100%, 0 230px, 0 0);
     }
     .main-request-form-box {
@@ -4316,6 +4365,12 @@ a.prev.page-numbers {
     .contact-page-sec::before,
     .resource-sec::before {
         display: none;
+    }
+    .main-service-sec .service-row.even:last-child {
+        padding-bottom: 60px;
+    }
+    .news-content {
+        padding: 0 15px;
     }
 }
 
@@ -4364,6 +4419,9 @@ a.prev.page-numbers {
     .dnd-upload-status .dnd-upload-details .name {
         padding-right: 0;
     }
+    .service-row>.for-mob {
+        max-width: 540px;
+    }
 }
 
 @media(max-width: 575px) {
@@ -4375,6 +4433,7 @@ a.prev.page-numbers {
         width: 57px;
         height: 61px;
     }
+    .service-row>.for-mob,
     .container,
     .container-fluid {
         padding: 0 30px;
@@ -4427,11 +4486,18 @@ a.prev.page-numbers {
         height: 300px;
     }
     .about-content {
-        padding: 15px 0 42px 0;
+        padding: 18px 0 42px 0;
     }
-    .service-content .sub-title {
-        font-size: 34px;
-        right: 0;
+    .main-service-sec .service-row.even:first-child {
+        padding: 41px 0 0;
+    }
+    .service-row .sub-title {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 21px;
+    }
+    .service-img-wp {
+        margin-bottom: 11px;
     }
     .h2-title {
         font-size: 32px;
@@ -4448,6 +4514,7 @@ a.prev.page-numbers {
     .service-row.odd {
         margin: 70px 0 0;
         padding-bottom: 51px;
+        clip-path: polygon(50% 0, 100% 26%, 100% 755px, 50% 100%, 0 755px, 0 26%);
     }
     .top-footer::after,
     .service-row.even::before,
@@ -4460,18 +4527,19 @@ a.prev.page-numbers {
     .request-a-quote {
         padding: 218px 0 90px;
     }
-    .main-div-sec {
-        padding: 234px 0 0;
-    }
     .fianance-sec {
-        padding-bottom: 43px;
+        padding: 234px 0 43px;
     }
     .gallery-sec .h2-title {
         margin-bottom: 13px;
     }
+    .news-content {
+        padding: 0;
+    }
     .news-letter-box {
         width: 100%;
         padding: 60px 15px 50px;
+        clip-path: polygon(50% 0, 100% 15%, 100% 100%, 50% 100%, 0 935px, 0 15%);
     }
     .news-form {
         max-width: 100%;
@@ -4516,6 +4584,10 @@ a.prev.page-numbers {
         right: 0;
         margin: 10px 0 0;
     }
+    .news-form .sec-btn:hover {
+        background: var(--dark-color);
+        border-color: var(--dark-color);
+    }
     .news-form .email-input {
         padding: 0 20px;
     }
@@ -4548,7 +4620,7 @@ a.prev.page-numbers {
     }
     .main-services .service-img-wp {
         height: 300px;
-        margin-bottom: 11px;
+        margin-bottom: 19px;
     }
     .main-request-form {
         padding: 41px 0 0;
@@ -4579,9 +4651,19 @@ a.prev.page-numbers {
     .codedropz-btn-wrap a {
         padding: 7px 20px;
     }
+    .main-service-sec .service-row.even:last-child {
+        padding-bottom: 51px;
+    }
+}
+
+@media(max-width: 460px) {
+    .service-row.odd {
+        clip-path: polygon(50% 0, 100% 25%, 100% 755px, 50% 100%, 0 755px, 0 25%);
+    }
 }
 
 @media(max-width: 400px) {
+    .service-row>.for-mob,
     .container,
     .container-fluid {
         padding: 0 15px;
@@ -4606,9 +4688,12 @@ a.prev.page-numbers {
         font-size: 26px;
         line-height: 44px;
     }
-    .service-content .sub-title {
-        font-size: 30px;
-        top: -39px;
+    .service-row .sub-title {
+        font-size: 32px;
+        margin-bottom: 10px;
+    }
+    .main-service-sec .service-row.even:first-child {
+        padding: 38px 0 0;
     }
     .main-services .service-img-wp,
     .service-row.odd .service-img-wp,
@@ -4627,7 +4712,7 @@ a.prev.page-numbers {
     }
     .footer-logo {
         width: 200px;
-        margin: auto;
+        margin: 0 auto 21px;
     }
     .resource-content li a {
         font-size: 16px;

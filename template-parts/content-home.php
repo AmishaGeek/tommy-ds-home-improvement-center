@@ -26,7 +26,7 @@
 <!-- End of Banner -->
 
 <!-- Start of About Us -->
-<section class="about-us sec-1920">
+<section class="about-us">
     <div class="container">
         <div class="row">
             <div class="col-lg-6 wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
@@ -49,7 +49,8 @@
 <!-- End of About Us -->
 
 <!-- Start of Service -->
-<div class="main-service-sec">
+<div class="main-service-sec sec-1920">
+    
     <?php
 	if (have_rows('services')) :
 	$service_counter = 1;
@@ -78,11 +79,16 @@
               
             <?php else : ?>
                 <div class="service-row even sec-1920">
+                <div class="for-mob wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
+                    <?php if ($service_counter == 1) { ?><span class="sub-title"><?php the_field('our_services_title'); ?></span><?php } ?>
+                </div>
                     <div class="container">
                         <div class="row align-items-center">
                             <div class="col-lg-6 order-2 order-lg-1 wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
                                 <div class="service-content">
-                                    <?php if ($service_counter == 1) { ?><span class="sub-title"><?php the_field('our_services_title'); ?></span><?php } ?>
+                                    <div class="for-des">
+                                        <?php if ($service_counter == 1) { ?><span class="sub-title"><?php the_field('our_services_title'); ?></span><?php } ?>
+                                    </div>
                                     <h3 class="h3-title"><?php the_sub_field('service_title'); ?></h3>
                                     <div class="service-text">
                                         <?php the_sub_field('service_content'); ?>
@@ -107,7 +113,7 @@
 <!-- End of Service -->
 
 <!-- Start of Request a quote -->
-<section class="request-a-quote bg-img sec-1920" style="background-image: url('<?php the_field('request_a_quote_back_image'); ?>');">
+<section class="request-a-quote bg-img" style="background-image: url('<?php the_field('request_a_quote_back_image'); ?>');">
     <div class="sec-wp">
         <div class="container">
             <div class="row">
@@ -145,7 +151,7 @@
 
 <!-- Start of Main Div Section -->
 <div class="main-div-sec">
-    <section class="fianance-sec">
+    <section class="fianance-sec sec-1920">
         <div class="container">
             <div class="row">
                 <div class="col-lg-5 wow left-animation" data-wow-duration="0.8s" data-wow-delay="0.1s">
@@ -180,7 +186,7 @@
 						foreach ($images as $image) : $i++;?>
                             <div>
                                 <div class="gallery-img-wp">
-                                    <a data-fancybox="gallery1" title="Gallery Img <?php echo $i; ?>" href="<?php echo esc_url($image['url']); ?>">
+                                    <a data-fancybox="gallery1" title="Gallery Image <?php echo $i; ?>" href="<?php echo esc_url($image['url']); ?>">
                                         <div class="gallery-img bg-img" style="background-image: url('<?php echo esc_url($image['url']); ?>');"></div>
                                     </a>
                                 </div>

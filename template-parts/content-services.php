@@ -62,11 +62,12 @@
             <div class="gallery-slider wow fadeup-animation" data-wow-duration="0.8s" data-wow-delay="0.2s">
                 <?php
 					$images = get_field('gallery_images');
+                    $i = 0;
 					if ($images) :
-						foreach ($images as $image) : ?>
+						foreach ($images as $image) : $i++;?>
                             <div>
                                 <div class="gallery-img-wp">
-                                    <a data-fancybox="gallery1" title="<?php echo $image['name']; ?>" href="<?php echo esc_url($image['url']); ?>">
+                                    <a data-fancybox="gallery1" title="Gallery Image <?php echo $i; ?>" href="<?php echo esc_url($image['url']); ?>">
                                         <div class="gallery-img bg-img" style="background-image: url('<?php echo esc_url($image['url']); ?>');"></div>
                                     </a>
                                 </div>

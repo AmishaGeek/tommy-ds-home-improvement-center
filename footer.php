@@ -73,7 +73,7 @@
 			</div>
 		</div>
 	</div>
-	<div class="bottom-footer">
+	<div class="bottom-footer sec-1920">
 		<div class="container">
 			<div class="row">
 				<div class="col-lg-12 text-center">
